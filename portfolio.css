@@ -7,22 +7,26 @@
   font-family: 'Poppins', sans-serif;
 }
 section {
-  padding: 2rem 9%;
+  padding: 1rem 9%;
 }
 
-/* html {
-  font-size: 62.5%;
+html {
+  /* font-size: 62.5%; */
   overflow-x: hidden;
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
-} */
+  width: 100%;
+}
 #menu-btn {
   display: none;
 }
 
+li{
+  margin-left : 10px;
+}
 .heading {
   text-align: center;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 
 .heading span {
@@ -99,13 +103,18 @@ header ul li a:hover {
 }
 .home {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   background: url(images/background.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#navbar {
+	background-color: #ffa51f
 }
 
 .home h2 {
@@ -154,7 +163,7 @@ header ul li a:hover {
 }
 
 .aboutBx {
-  padding-right: 30px;
+  padding-right: 100px;
 }
 
 .aboutBx h3 {
@@ -169,8 +178,8 @@ header ul li a:hover {
 .img-about {
   width: 300px;
   height: 300px;
-  margin-left: 70px;
-  margin-right: auto;
+  /* margin-left: 70px; */
+  /* margin-right: auto; */
 }
 
 .services .box-container {
@@ -374,7 +383,7 @@ header ul li a:hover {
   font-size: 1.2rem;
 }
 
-@media (max-width: 880px) {
+/* @media (max-width: 880px) {
   html {
     font-size: 50%;
   }
@@ -382,4 +391,32 @@ header ul li a:hover {
   .header {
     padding: 2rem 2rem;
   }
+} */
+
+@media only screen and (max-width: 576px) {
+	.home {
+		position: relative;
+		height: 100vh;
+		background: url(images/about.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		background-position: left;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	  }
+
+	  .aboutBx {
+		  font-size: small;
+	  }
+
+	  .heading span {
+		font-size: 1rem;
+		background: #ffa51f;
+		color: #fff;
+		border-radius: 0.5rem;
+		padding: 0.2rem 1rem;
+		text-transform: uppercase;
+	  }
 }
